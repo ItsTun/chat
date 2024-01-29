@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { TextField, Button, Container, Paper, AppBar, Toolbar, Typography } from '@material-ui/core';
 
 import { setUserName, sendMessage, loadMessageHistory } from './actions';
 
